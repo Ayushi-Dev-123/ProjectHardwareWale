@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "401462071599",
+    "project_id": "hardwarewale-c6f0f",
+    "storage_bucket": "hardwarewale-c6f0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:401462071599:android:3454434b17d808ebd9d1da",
+        "android_client_info": {
+          "package_name": "com.example.hardwaremall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "401462071599-aekvvi9cji60getgs95kl86bicah0v1p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hardwaremall",
+            "certificate_hash": "ceb0843083413e87970e09563d08af37797e228e"
+          }
+        },
+        {
+          "client_id": "401462071599-j1dfijks4rqk20gcaoh32u19o1888rjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAElvfpc-908OY_PP0D1WWLxrUitY-mmLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "401462071599-j1dfijks4rqk20gcaoh32u19o1888rjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

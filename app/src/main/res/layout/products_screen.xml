@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/yellow"
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/backPress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                android:src="@drawable/arrow_back_icon" />
+
+            <TextView
+                android:gravity="center_vertical"
+                android:id="@+id/tvAppName"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:text="Products"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:background="@drawable/search_decorator"
+                android:hint="Search Product"
+                android:id="@+id/etSearch"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="0.8"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:padding="2dp"
+                android:src="@drawable/search_icon"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProduct"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

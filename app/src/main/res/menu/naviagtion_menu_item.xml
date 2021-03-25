@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+    <item
+        android:id="@+id/menuCart"
+        android:icon="@drawable/cart_icon"
+        android:title="Cart" />
+    <item
+        android:id="@+id/menuShopByCategoty"
+        android:title="Shop by Category"
+        android:icon="@drawable/store_icon"/>
+    <item
+        android:id="@+id/menuFavorites"
+        android:icon="@drawable/favorite_icon"
+        android:title="Favourites" />
+    <item
+        android:id="@+id/menuManageOrders"
+        android:title="Manage Orders"
+        android:icon="@drawable/sort_icon"/>
+    <item
+        android:id="@+id/menuOrderHistory"
+        android:title="Order History"
+        android:icon="@drawable/history_icon"/>
+    <item android:id="@+id/menuProfile"
+        android:title="View profile"
+        android:icon="@drawable/person_icon"/>
+    <item
+        android:id="@+id/menuSetting"
+        android:icon="@drawable/settings_icon"
+        android:title="Setting" />
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:id="@+id/menuContactus"
+                android:title="Contact us"
+                android:icon="@drawable/contact_us_icon"/>
+            <item
+                android:id="@+id/menuPrivacyPolicy"
+                android:title="Privacy Policy"
+                android:icon="@drawable/privacy_icon"/>
+            <item
+                android:id="@+id/menuLogout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

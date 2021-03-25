@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hardwaremall">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.gm.permission.WRITE_GMAIL" />
+    <uses-permission android:name="com.google.android.gm.permission.AUTO_SEND" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.hardwaremall.LauncherActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.hardwaremall.Breakabl" />
+        <activity
+            android:name="com.example.hardwaremall.PaymentGateWay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.hardwaremall.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.LogInActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ProductActivity"
+            android:parentActivityName="com.example.hardwaremall.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ProductDescriptionActivity"
+            android:parentActivityName="com.example.hardwaremall.ProductActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.CategoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.OrderHistoryActivity"
+            android:parentActivityName="com.example.hardwaremall.HomeActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.OrderDetailsActivity"
+            android:parentActivityName="com.example.hardwaremall.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.FavoriteActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.SettingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.CartActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ManageOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.BuyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.PlaceOrderActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ViewProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.BuyProductActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.PlaceProductActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.OrderHistoryDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.RatingActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.ContactActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.DiscountedProductDescription"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.hardwaremall.RecentProductDescription"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.example.hardwaremall.ReOrderActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".CartProductDescription"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".FavoriteProductDescription"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".PlaceReorderActivity"
+            android:screenOrientation="portrait"/>
+
+        <service
+            android:name="com.example.hardwaremall.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_ILgsfZCZoFIKMb" />
+
+    </application>
+</manifest>
